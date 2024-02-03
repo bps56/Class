@@ -53,7 +53,6 @@ class telegramClass
         }
         return $return = ($return) ? $return : false;
     }
-
     public function data_channel()
     {
         if ($this->token) {
