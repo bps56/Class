@@ -5,7 +5,6 @@
 
 class telegramClass
 {
-    
     private $token = '';
     private $chatID;
     private $mode;
