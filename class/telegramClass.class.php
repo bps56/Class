@@ -1,5 +1,4 @@
 <?
-// test
 //	Telegram bot class
 //	Author: bps56@ya.ru
 //	Date:	03.03.2024
