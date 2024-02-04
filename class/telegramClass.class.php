@@ -21,7 +21,7 @@ class telegramClass
     public function setMode($mode = '')
     {
         $mode = ($mode = trim(mb_strtolower($mode))) ? $mode : $this->defaultMode;
-        $this->mode = ($this->dataMode[$mode]) ? $mode : $this->dataMode[$this->defaultMode];
+        $this->mode = ($this->dataMode[$mode]) ? $this->dataMode[$mode] : $this->dataMode[$this->defaultMode];
     }
     public function setChat($chatID)
     {
