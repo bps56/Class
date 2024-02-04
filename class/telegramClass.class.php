@@ -34,17 +34,17 @@ class telegramClass
             $ch = curl_init();
             curl_setopt_array(
                 $ch,
-                array(
+                [
                     CURLOPT_URL => 'https://api.telegram.org/bot' . $this->token . '/sendMessage',
                     CURLOPT_POST => TRUE,
                     CURLOPT_RETURNTRANSFER => TRUE,
                     CURLOPT_TIMEOUT => 10,
-                    CURLOPT_POSTFIELDS => array(
+                    CURLOPT_POSTFIELDS => [
                         'chat_id' => $this->chatID,
                         'text' => $message,
                         'parse_mode' => $this->mode
-                    ),
-                )
+                    ]
+                ]
             );
             curl_exec($ch);
             $return = (curl_getinfo($ch, CURLINFO_RESPONSE_CODE) == 200) ? true : false;
