@@ -1,7 +1,7 @@
 <?
 //	Telegram bot class
 //	Author: bps56@ya.ru
-//	Date:	03.03.2024
+//	Date:	03.02.2024
 
 class telegramClass
 {
