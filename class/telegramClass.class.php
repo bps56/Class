@@ -46,6 +46,7 @@ class telegramClass
                     ),
                 )
             );
+            curl_exec($ch);
             $return = (curl_getinfo($ch, CURLINFO_RESPONSE_CODE) == 200) ? true : false;
             curl_close($ch);
             unset($message, $ch);
